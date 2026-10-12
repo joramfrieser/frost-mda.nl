@@ -2,25 +2,14 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="FROST helpt organisaties met data governance, datakwaliteit, kritieke data-elementen, AI governance, training en coaching."
-    >
-
-    <title>FROST | Mens, Data & AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FROST helpt organisaties met data governance, datakwaliteit, kritieke data-elementen, AI governance, training en coaching.">
+    <title>FROST | Mens, Data &amp; AI</title>    
 
     <style>
-
         /* ========================================
            BASIS
         ======================================== */
-
         :root {
             --blue: #072f57;
             --blue-light: #164f7d;
@@ -28,43 +17,29 @@
             --ice: #f5f8fb;
             --line: #d7e0e8;
             --text: #273443;
-            --muted: #687786;
+            --muted: #5a6a79;
             --white: #ffffff;
             --radius: 24px;
             --shadow: 0 24px 70px rgba(7, 47, 87, 0.10);
         }
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Arial,
-                sans-serif;
-
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
             color: var(--text);
             background: var(--white);
-            line-height: 1.7;
+            line-height: 1.65;
+            text-align: center;
             overflow-x: hidden;
         }
 
-        img {
-            display: block;
-            max-width: 100%;
-        }
+        img { display: block; max-width: 100%; height: auto; }
 
-        a {
-            color: inherit;
-        }
+        a { color: inherit; }
 
         .container {
             width: min(1160px, calc(100% - 48px));
@@ -73,15 +48,15 @@
 
         .section {
             position: relative;
-            padding: 130px 0;
+            padding: 80px 0;
         }
 
         .section-label {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 16px;
-            margin-bottom: 24px;
-
+            margin-bottom: 18px;
             color: var(--blue-light);
             font-size: 13px;
             font-weight: 700;
@@ -89,39 +64,33 @@
             text-transform: uppercase;
         }
 
-        .section-label::before {
+        .section-label::before,
+        .section-label::after {
             content: "";
             width: 52px;
             height: 1px;
             background: var(--blue-light);
         }
 
-        h1,
-        h2,
-        h3,
-        p {
-            margin-top: 0;
-        }
+        h1, h2, h3, p { margin-top: 0; }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             color: var(--blue);
             line-height: 1.15;
         }
 
         h1 {
             max-width: 820px;
-            margin-bottom: 30px;
-            font-size: clamp(52px, 7vw, 94px);
+            margin-bottom: 20px;
+            font-size: clamp(42px, 6vw, 76px);
             font-weight: 650;
             letter-spacing: -0.055em;
         }
 
         h2 {
             max-width: 820px;
-            margin-bottom: 30px;
-            font-size: clamp(38px, 5vw, 64px);
+            margin-bottom: 18px;
+            font-size: clamp(32px, 4.2vw, 52px);
             font-weight: 650;
             letter-spacing: -0.045em;
         }
@@ -148,13 +117,7 @@
             width: min(1160px, calc(100% - 48px));
             height: 1px;
             margin: 0 auto;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                var(--line) 15%,
-                var(--line) 85%,
-                transparent
-            );
+            background: linear-gradient(90deg, transparent, var(--line) 15%, var(--line) 85%, transparent);
         }
 
         .background-word {
@@ -162,16 +125,13 @@
             top: 45px;
             right: -20px;
             z-index: 0;
-
             margin: 0;
-
             color: rgba(7, 47, 87, 0.035);
             font-size: clamp(100px, 16vw, 230px);
             font-weight: 800;
             line-height: 0.8;
             letter-spacing: -0.07em;
             text-transform: uppercase;
-
             pointer-events: none;
             user-select: none;
         }
@@ -181,17 +141,19 @@
             z-index: 1;
         }
 
+        h1, h2, .lead, .body-copy, .hero-text, .expertise-intro {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         /* ========================================
            NAVIGATIE
         ======================================== */
-
         .nav {
             position: absolute;
             top: 0;
             left: 0;
             z-index: 20;
-
             width: 100%;
             padding: 28px 0;
         }
@@ -210,9 +172,7 @@
             text-decoration: none;
         }
 
-        .nav a:hover {
-            color: var(--blue-light);
-        }
+        .nav a:hover { color: var(--blue-light); }
 
         .nav-contact {
             padding: 10px 18px;
@@ -220,40 +180,21 @@
             border-radius: 999px;
         }
 
-
         /* ========================================
            HERO
         ======================================== */
-
         .hero {
             position: relative;
             display: flex;
             align-items: center;
-            min-height: 100vh;
-            padding: 150px 0 100px;
+            min-height: 85vh;
+            padding: 110px 0 60px;
             overflow: hidden;
-
             background:
-                linear-gradient(
-                    90deg,
-                    rgba(7, 47, 87, 0.045) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    rgba(7, 47, 87, 0.045) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    135deg,
-                    #ffffff 0%,
-                    #f7fafc 70%,
-                    #edf4f8 100%
-                );
-
-            background-size:
-                80px 80px,
-                80px 80px,
-                100% 100%;
+                linear-gradient(90deg, rgba(7, 47, 87, 0.045) 1px, transparent 1px),
+                linear-gradient(rgba(7, 47, 87, 0.045) 1px, transparent 1px),
+                linear-gradient(135deg, #ffffff 0%, #f7fafc 70%, #edf4f8 100%);
+            background-size: 80px 80px, 80px 80px, 100% 100%;
         }
 
         .hero::before {
@@ -261,10 +202,8 @@
             position: absolute;
             top: -240px;
             right: -180px;
-
             width: 680px;
             height: 680px;
-
             border: 1px solid rgba(7, 47, 87, 0.11);
             border-radius: 50%;
         }
@@ -274,10 +213,8 @@
             position: absolute;
             right: 110px;
             bottom: -340px;
-
             width: 600px;
             height: 600px;
-
             border: 1px solid rgba(7, 47, 87, 0.07);
             border-radius: 50%;
         }
@@ -285,53 +222,22 @@
         .hero-layout {
             position: relative;
             z-index: 2;
-
             display: grid;
             grid-template-columns: 1.1fr 0.9fr;
             align-items: center;
-            gap: 80px;
+            gap: 56px;
         }
 
         .hero-logo {
-            width: min(470px, 90%);
-            margin-bottom: 54px;
-        }
-
-        .brand-line {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-            margin-bottom: 28px;
-        }
-
-        .brand-line span {
-            color: var(--blue);
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
-        .brand-line i {
-            display: block;
-            flex: 1;
-            max-width: 70px;
-            height: 1px;
-            background: var(--blue-light);
+            width: min(420px, 90%);
+            margin: 0 auto 28px;
         }
 
         .hero-text {
             max-width: 640px;
-            margin-bottom: 42px;
+            margin-bottom: 0;
             font-size: clamp(20px, 2vw, 25px);
             color: var(--muted);
-        }
-
-        .hero-actions {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-            flex-wrap: wrap;
         }
 
         .button {
@@ -340,18 +246,12 @@
             justify-content: center;
             min-height: 54px;
             padding: 0 26px;
-
             border: 1px solid var(--blue);
             border-radius: 999px;
-
             font-size: 15px;
             font-weight: 700;
             text-decoration: none;
-
-            transition:
-                background 180ms ease,
-                color 180ms ease,
-                transform 180ms ease;
+            transition: background 180ms ease, color 180ms ease, transform 180ms ease;
         }
 
         .button-primary {
@@ -364,18 +264,9 @@
             background: transparent;
         }
 
-        .button:hover {
-            transform: translateY(-2px);
-        }
-
-        .button-primary:hover {
-            background: var(--blue-light);
-        }
-
-        .button-secondary:hover {
-            color: var(--white);
-            background: var(--blue);
-        }
+        .button:hover { transform: translateY(-2px); }
+        .button-primary:hover { background: var(--blue-light); }
+        .button-secondary:hover { color: var(--white); background: var(--blue); }
 
         .hero-visual {
             position: relative;
@@ -394,13 +285,7 @@
             content: "";
             position: absolute;
             inset: 0;
-
-            background: linear-gradient(
-                180deg,
-                transparent 58%,
-                rgba(7, 47, 87, 0.15) 100%
-            );
-
+            background: linear-gradient(180deg, transparent 58%, rgba(7, 47, 87, 0.15) 100%);
             pointer-events: none;
         }
 
@@ -416,10 +301,8 @@
             top: 40px;
             right: -32px;
             z-index: -1;
-
             width: 100%;
             height: 100%;
-
             border: 1px solid rgba(7, 47, 87, 0.25);
             border-radius: 220px 220px 28px 28px;
         }
@@ -429,9 +312,7 @@
             left: -55px;
             bottom: 54px;
             z-index: 3;
-
             padding: 18px 22px;
-
             color: var(--blue);
             background: rgba(255, 255, 255, 0.94);
             border: 1px solid rgba(7, 47, 87, 0.12);
@@ -441,13 +322,9 @@
         }
 
         .portrait-caption strong,
-        .portrait-caption span {
-            display: block;
-        }
+        .portrait-caption span { display: block; }
 
-        .portrait-caption strong {
-            font-size: 16px;
-        }
+        .portrait-caption strong { font-size: 16px; }
 
         .portrait-caption span {
             margin-top: 2px;
@@ -460,28 +337,17 @@
             left: 50%;
             bottom: 24px;
             z-index: 5;
-
             width: 1px;
             height: 52px;
-
-            background: linear-gradient(
-                var(--blue-light),
-                transparent
-            );
+            background: linear-gradient(var(--blue-light), transparent);
         }
-
 
         /* ========================================
            INTRO
         ======================================== */
+        .intro { text-align: center; }
 
-        .intro {
-            text-align: center;
-        }
-
-        .intro .section-label {
-            justify-content: center;
-        }
+        .intro .section-label { justify-content: center; }
 
         .intro h2,
         .intro .lead {
@@ -489,59 +355,28 @@
             margin-right: auto;
         }
 
-        .intro-accent {
-            width: 1px;
-            height: 90px;
-            margin: 48px auto 0;
-
-            background: linear-gradient(
-                var(--blue-light),
-                transparent
-            );
-        }
-
-
         /* ========================================
            MENS, DATA EN AI
         ======================================== */
-
-        .pillar-section {
-            background: var(--ice);
-        }
+        .pillar-section { background: var(--ice); }
 
         .pillars {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 0;
-            margin-top: 70px;
-
+            margin-top: 40px;
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
         }
 
         .pillar {
             position: relative;
-            min-height: 340px;
-            padding: 46px 36px;
+            padding: 36px 32px;
         }
 
-        .pillar + .pillar {
-            border-left: 1px solid var(--line);
-        }
+        .pillar + .pillar { border-left: 1px solid var(--line); }
 
-        .pillar-number {
-            display: block;
-            margin-bottom: 70px;
-
-            color: var(--blue-light);
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-        }
-
-        .pillar h3 {
-            font-size: 34px;
-        }
+        .pillar h3 { font-size: 34px; }
 
         .pillar p {
             margin-bottom: 0;
@@ -554,28 +389,22 @@
             position: absolute;
             left: 36px;
             bottom: 0;
-
             width: 0;
             height: 3px;
-
             background: var(--blue);
             transition: width 250ms ease;
         }
 
-        .pillar:hover::after {
-            width: calc(100% - 72px);
-        }
-
+        .pillar:hover::after { width: calc(100% - 72px); }
 
         /* ========================================
            DATA EN EILANDEN
         ======================================== */
-
         .data-layout {
             display: grid;
             grid-template-columns: 0.82fr 1.18fr;
             align-items: center;
-            gap: 75px;
+            gap: 48px;
         }
 
         .data-copy p {
@@ -584,10 +413,10 @@
         }
 
         .data-statement {
-            margin-top: 34px;
-            padding: 24px 0 24px 26px;
-            border-left: 2px solid var(--blue);
-
+            margin-top: 24px;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
             color: var(--blue);
             font-size: 22px;
             font-weight: 600;
@@ -596,8 +425,8 @@
 
         .islands-frame {
             position: relative;
+            margin: 0;
             padding: 14px;
-
             background: var(--white);
             border: 1px solid var(--line);
             border-radius: var(--radius);
@@ -610,10 +439,8 @@
             top: -24px;
             right: -24px;
             z-index: -1;
-
             width: 130px;
             height: 130px;
-
             border-top: 1px solid rgba(7, 47, 87, 0.25);
             border-right: 1px solid rgba(7, 47, 87, 0.25);
             border-radius: 0 30px 0 0;
@@ -626,17 +453,14 @@
 
         .image-caption {
             padding: 15px 8px 3px;
-
             color: var(--muted);
             font-size: 13px;
             letter-spacing: 0.02em;
         }
 
-
         /* ========================================
            EXPERTISE
         ======================================== */
-
         .expertise-section {
             overflow: hidden;
             color: var(--white);
@@ -648,10 +472,8 @@
             position: absolute;
             top: -270px;
             right: -170px;
-
             width: 650px;
             height: 650px;
-
             border: 1px solid rgba(255, 255, 255, 0.10);
             border-radius: 50%;
         }
@@ -661,29 +483,17 @@
             position: absolute;
             right: 150px;
             bottom: -390px;
-
             width: 650px;
             height: 650px;
-
             border: 1px solid rgba(255, 255, 255, 0.07);
             border-radius: 50%;
         }
 
-        .expertise-section .background-word {
-            color: rgba(255, 255, 255, 0.035);
-        }
-
-        .expertise-section .section-label {
-            color: rgba(255, 255, 255, 0.72);
-        }
-
-        .expertise-section .section-label::before {
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        .expertise-section h2 {
-            color: var(--white);
-        }
+        .expertise-section .background-word { color: rgba(255, 255, 255, 0.035); }
+        .expertise-section .section-label { color: rgba(255, 255, 255, 0.72); }
+        .expertise-section .section-label::before,
+        .expertise-section .section-label::after { background: rgba(255, 255, 255, 0.5); }
+        .expertise-section h2 { color: var(--white); }
 
         .expertise-intro {
             max-width: 720px;
@@ -695,8 +505,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1px;
-            margin-top: 65px;
-
+            margin-top: 36px;
             overflow: hidden;
             background: rgba(255, 255, 255, 0.14);
             border: 1px solid rgba(255, 255, 255, 0.14);
@@ -705,26 +514,13 @@
 
         .expertise-item {
             position: relative;
-            min-height: 115px;
-            padding: 34px;
-
+            min-height: 0;
+            padding: 24px;
             background: rgba(255, 255, 255, 0.035);
             transition: background 180ms ease;
         }
 
-        .expertise-item:hover {
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .expertise-item span {
-            display: block;
-            margin-bottom: 7px;
-
-            color: rgba(255, 255, 255, 0.48);
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.16em;
-        }
+        .expertise-item:hover { background: rgba(255, 255, 255, 0.08); }
 
         .expertise-item strong {
             color: var(--white);
@@ -732,36 +528,23 @@
             font-weight: 550;
         }
 
-
         /* ========================================
            WERKWIJZE
         ======================================== */
-
         .approach {
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
-            gap: 85px;
+            gap: 44px;
             align-items: start;
         }
 
-        .approach-steps {
-            border-top: 1px solid var(--line);
-        }
+        .approach-steps { border-top: 1px solid var(--line); }
 
         .approach-step {
             display: grid;
             grid-template-columns: 70px 1fr;
-            gap: 25px;
-            padding: 34px 0;
-
+            padding: 24px 0;
             border-bottom: 1px solid var(--line);
-        }
-
-        .approach-step span {
-            color: var(--blue-light);
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 0.15em;
         }
 
         .approach-step h3 {
@@ -775,24 +558,14 @@
             font-size: 16px;
         }
 
-
         /* ========================================
            OVER JORAM
         ======================================== */
-
         .about-section {
             background:
-                linear-gradient(
-                    90deg,
-                    rgba(7, 47, 87, 0.035) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    rgba(7, 47, 87, 0.035) 1px,
-                    transparent 1px
-                ),
+                linear-gradient(90deg, rgba(7, 47, 87, 0.035) 1px, transparent 1px),
+                linear-gradient(rgba(7, 47, 87, 0.035) 1px, transparent 1px),
                 var(--ice);
-
             background-size: 80px 80px;
         }
 
@@ -800,19 +573,16 @@
             display: grid;
             grid-template-columns: 0.75fr 1.25fr;
             align-items: center;
-            gap: 90px;
+            gap: 48px;
         }
 
-        .about-image {
-            position: relative;
-        }
+        .about-image { position: relative; }
 
         .about-image img {
             width: 100%;
             aspect-ratio: 0.82;
             object-fit: cover;
             object-position: center top;
-
             border-radius: 24px;
             box-shadow: var(--shadow);
         }
@@ -823,10 +593,8 @@
             top: 24px;
             left: -24px;
             z-index: -1;
-
             width: 100%;
             height: 100%;
-
             border: 1px solid rgba(7, 47, 87, 0.24);
             border-radius: 24px;
         }
@@ -837,29 +605,25 @@
         }
 
         .about-quote {
-            margin-top: 34px;
-            padding: 26px 0 26px 28px;
-
-            border-left: 2px solid var(--blue);
+            margin-top: 24px;
+            padding: 18px 0;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
             color: var(--blue);
             font-size: 23px;
             font-weight: 600;
             line-height: 1.5;
         }
 
-
         /* ========================================
            CONTACT
         ======================================== */
-
         .contact-section {
-            padding: 150px 0;
+            padding: 80px 0;
             text-align: center;
         }
 
-        .contact-section .section-label {
-            justify-content: center;
-        }
+        .contact-section .section-label { justify-content: center; }
 
         .contact-section h2,
         .contact-section .lead {
@@ -871,14 +635,13 @@
             display: flex;
             justify-content: center;
             gap: 18px;
-            margin-top: 48px;
+            margin-top: 28px;
             flex-wrap: wrap;
         }
 
         .contact-email {
             display: inline-block;
-            margin-top: 40px;
-
+            margin-top: 24px;
             color: var(--blue);
             font-size: clamp(23px, 3vw, 34px);
             font-weight: 650;
@@ -889,24 +652,18 @@
         .contact-email::after {
             content: "";
             display: block;
-
             width: 0;
             height: 2px;
             margin-top: 8px;
-
             background: var(--blue);
             transition: width 250ms ease;
         }
 
-        .contact-email:hover::after {
-            width: 100%;
-        }
-
+        .contact-email:hover::after { width: 100%; }
 
         /* ========================================
            FOOTER
         ======================================== */
-
         footer {
             color: rgba(255, 255, 255, 0.72);
             background: var(--blue);
@@ -914,10 +671,11 @@
 
         .footer-inner {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
-            gap: 35px;
-            padding: 35px 0;
+            justify-content: center;
+            gap: 12px;
+            padding: 30px 0;
         }
 
         .footer-brand {
@@ -927,9 +685,7 @@
             letter-spacing: 0.08em;
         }
 
-        .footer-text {
-            font-size: 13px;
-        }
+        .footer-text { font-size: 13px; }
 
         .footer-links {
             display: flex;
@@ -943,128 +699,79 @@
             text-decoration: none;
         }
 
-        .footer-links a:hover {
-            color: var(--white);
-        }
-
+        .footer-links a:hover { color: var(--white); }
 
         /* ========================================
            RESPONSIVE
         ======================================== */
-
         @media (max-width: 900px) {
+            .section { padding: 60px 0; }
 
-            .section {
-                padding: 100px 0;
-            }
-
-            .nav-inner a:not(.nav-contact) {
-                display: none;
-            }
+            .nav-inner a:not(.nav-contact) { display: none; }
 
             .hero {
                 min-height: auto;
-                padding: 135px 0 100px;
+                padding: 100px 0 56px;
             }
 
             .hero-layout,
             .data-layout,
             .approach,
-            .about-layout {
-                grid-template-columns: 1fr;
-            }
+            .about-layout { grid-template-columns: 1fr; }
 
-            .hero-layout {
-                gap: 75px;
-            }
+            .hero-layout { gap: 44px; }
 
             .hero-visual {
                 width: min(420px, calc(100% - 25px));
                 margin: 0 auto;
             }
 
-            .portrait-caption {
-                left: -20px;
-            }
+            .portrait-caption { left: -20px; }
 
-            .pillars {
-                grid-template-columns: 1fr;
-            }
+            .pillars { grid-template-columns: 1fr; }
 
-            .pillar {
-                min-height: 0;
-            }
+            .pillar { min-height: 0; }
 
             .pillar + .pillar {
                 border-top: 1px solid var(--line);
                 border-left: 0;
             }
 
-            .pillar-number {
-                margin-bottom: 40px;
-            }
-
-            .data-layout {
-                gap: 60px;
-            }
-
-            .approach {
-                gap: 55px;
-            }
-
-            .about-layout {
-                gap: 70px;
-            }
+            .data-layout { gap: 36px; }
+            .approach { gap: 32px; }
+            .about-layout { gap: 40px; }
 
             .about-image {
                 width: min(460px, calc(100% - 24px));
                 margin: 0 auto;
             }
-
         }
 
         @media (max-width: 620px) {
+            .container { width: min(100% - 34px, 1160px); }
 
-            .container {
-                width: min(100% - 34px, 1160px);
-            }
+            .section-line { width: calc(100% - 34px); }
 
-            .section-line {
-                width: calc(100% - 34px);
-            }
-
-            .nav {
-                padding-top: 20px;
-            }
-
-            .hero {
-                padding-top: 115px;
-            }
-
-            .hero-logo {
-                margin-bottom: 40px;
-            }
-
-            .brand-line {
-                gap: 11px;
-            }
-
-            .brand-line span {
+            .section-label {
                 font-size: 12px;
+                letter-spacing: 0.14em;
             }
 
-            .brand-line i {
-                max-width: 34px;
-            }
+            .section-label::before,
+            .section-label::after { width: 26px; }
 
-            .hero-actions {
-                align-items: stretch;
-                flex-direction: column;
-            }
+            .lead { font-size: 19px; }
+            .body-copy,
+            .data-copy p,
+            .about-copy p { font-size: 17px; }
 
-            .button {
-                width: 100%;
-            }
+            .nav { padding-top: 20px; }
+
+            .hero { padding-top: 90px; }
+
+            .hero-logo { margin-bottom: 24px; }
+
+            .button { width: 100%; }
 
             .portrait-caption {
                 bottom: 25px;
@@ -1077,123 +784,62 @@
                 font-size: 88px;
             }
 
-            .pillars {
-                margin-top: 50px;
-            }
+            .pillars { margin-top: 32px; }
 
-            .pillar {
-                padding: 35px 25px;
-            }
+            .pillar { padding: 35px 25px; }
 
-            .pillar::after {
-                left: 25px;
-            }
+            .pillar::after { left: 25px; }
 
-            .pillar:hover::after {
-                width: calc(100% - 50px);
-            }
+            .pillar:hover::after { width: calc(100% - 50px); }
 
-            .expertise-grid {
-                grid-template-columns: 1fr;
-            }
+            .expertise-grid { grid-template-columns: 1fr; }
 
             .expertise-item {
                 min-height: 0;
                 padding: 27px 25px;
             }
 
-            .approach-step {
-                grid-template-columns: 45px 1fr;
-                gap: 15px;
-            }
-
-            .contact-section {
-                padding: 110px 0;
-            }
-
-            .footer-inner {
-                align-items: flex-start;
-                flex-direction: column;
-            }
-
-            .footer-links {
-                align-items: flex-start;
-                flex-direction: column;
-                gap: 9px;
-            }
+            .contact-section { padding: 64px 0; }
 
         }
 
         @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
 
-            html {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                transition: none !important;
-            }
-
+            *, *::before, *::after { transition: none !important; }
         }
-
     </style>
 </head>
 
 <body>
 
     <!-- NAVIGATIE -->
-
     <nav class="nav" aria-label="Hoofdnavigatie">
         <div class="container nav-inner">
-            #waaromWaarom FROST</a>
-            #expertiseExpertise</a>
-            #overOver Joram</a>
-            #contactKennismaken</a>
+            <a href="#waarom">Waarom FROST</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#over">Over Joram</a>
+            <a class="nav-contact" href="#contact">Kennismaken</a>
         </div>
     </nav>
 
 
     <!-- HERO -->
-
     <header class="hero">
 
         <div class="container hero-layout">
 
             <div class="hero-content">
 
-                <img src="Logo.png" alt="FROST
+                <img class="hero-logo" src="Logo.png" alt="FROST – Mens, Data en AI" width="470">
 
-                <div class="brand-line" aria-label="Mens, Data en AI">
-                    <span>Mens</span>
-                    <i></i>
-                    <span>Data</span>
-                    <i></i>
-                    <span>AI</span>
-                </div>
-
-                <h1>
-                    Focus op wat echt belangrijk is.
-                </h1>
+                <h1>Focus op wat echt belangrijk is.</h1>
 
                 <p class="hero-text">
                     FROST helpt organisaties om complexe vraagstukken
                     rond data, governance en AI terug te brengen tot
                     praktische oplossingen die werken.
                 </p>
-
-                <div class="hero-actions">
-
-                    #waarom
-                        Ontdek FROST
-                    </a>
-
-                    #contact
-                        Kennismaken
-                    </a>
-
-                </div>
 
             </div>
 
@@ -1202,7 +848,7 @@
                 <div class="portrait-line"></div>
 
                 <div class="portrait-frame">
-                    Joram.png
+                    <img src="Joram.png" alt="Portret van Joram Frieser">
                 </div>
 
                 <div class="portrait-caption">
@@ -1219,25 +865,18 @@
     </header>
 
 
-    <!-- WAAROM FROST -->
-
     <main>
 
+        <!-- WAAROM FROST -->
         <section class="section intro" id="waarom">
 
-            <span class="background-word" aria-hidden="true">
-                Focus
-            </span>
+            <span class="background-word" aria-hidden="true">Focus</span>
 
             <div class="container content-layer">
 
-                <div class="section-label">
-                    Waarom FROST
-                </div>
+                <div class="section-label">Waarom FROST</div>
 
-                <h2>
-                    Technologie is zelden de echte uitdaging.
-                </h2>
+                <h2>Technologie is zelden de echte uitdaging.</h2>
 
                 <p class="lead">
                     Veel organisaties investeren in data, governance en AI.
@@ -1245,8 +884,6 @@
                     besluitvorming en het daadwerkelijk toepassen van wat
                     bedacht is.
                 </p>
-
-                <div class="intro-accent" aria-hidden="true"></div>
 
             </div>
 
@@ -1257,22 +894,15 @@
 
 
         <!-- MENS, DATA EN AI -->
-
         <section class="section pillar-section">
 
-            <span class="background-word" aria-hidden="true">
-                MDA
-            </span>
+            <span class="background-word" aria-hidden="true">MDA</span>
 
             <div class="container content-layer">
 
-                <div class="section-label">
-                    Mens | Data | AI
-                </div>
+                <div class="section-label">Mens | Data | AI</div>
 
-                <h2>
-                    Drie werelden. Eén samenhangend geheel.
-                </h2>
+                <h2>Drie werelden. Eén samenhangend geheel.</h2>
 
                 <p class="lead">
                     Waarde ontstaat wanneer mensen, data en technologie
@@ -1282,39 +912,30 @@
                 <div class="pillars">
 
                     <article class="pillar">
-
                         <h3>Mens</h3>
-
                         <p>
                             Verandering begint bij mensen. Met helder
                             eigenaarschap, samenwerking en begrip wordt
                             governance onderdeel van het dagelijks werk.
                         </p>
-
                     </article>
 
                     <article class="pillar">
-
                         <h3>Data</h3>
-
                         <p>
                             Niet alle data is even belangrijk. Focus op
                             kritieke data brengt overzicht en ondersteunt
                             betere besluiten, beheersing en resultaten.
                         </p>
-
                     </article>
 
                     <article class="pillar">
-
                         <h3>AI</h3>
-
                         <p>
                             AI vraagt om meer dan technologie. Heldere
                             kaders, betrouwbare data en verantwoord gebruik
                             maken toepassingen duurzaam en waardevol.
                         </p>
-
                     </article>
 
                 </div>
@@ -1325,24 +946,17 @@
 
 
         <!-- DATA -->
-
         <section class="section">
 
-            <span class="background-word" aria-hidden="true">
-                Data
-            </span>
+            <span class="background-word" aria-hidden="true">Data</span>
 
             <div class="container data-layout content-layer">
 
                 <div class="data-copy">
 
-                    <div class="section-label">
-                        Focus aanbrengen
-                    </div>
+                    <div class="section-label">Focus aanbrengen</div>
 
-                    <h2>
-                        Niet alle data is even belangrijk.
-                    </h2>
+                    <h2>Niet alle data is even belangrijk.</h2>
 
                     <p>
                         Organisaties beschikken over duizenden
@@ -1364,7 +978,7 @@
 
                 <figure class="islands-frame">
 
-                    Eilanden.png
+                    <img src="Eilanden.png" alt="Van een versnipperd datalandschap naar gerichte focus" loading="lazy">
 
                     <figcaption class="image-caption">
                         Van een versnipperd landschap naar gerichte focus.
@@ -1378,22 +992,15 @@
 
 
         <!-- EXPERTISE -->
-
         <section class="section expertise-section" id="expertise">
 
-            <span class="background-word" aria-hidden="true">
-                Expertise
-            </span>
+            <span class="background-word" aria-hidden="true">Expertise</span>
 
             <div class="container content-layer">
 
-                <div class="section-label">
-                    Waar FROST bij helpt
-                </div>
+                <div class="section-label">Waar FROST bij helpt</div>
 
-                <h2>
-                    Van strategie naar werkbare praktijk.
-                </h2>
+                <h2>Van strategie naar werkbare praktijk.</h2>
 
                 <p class="expertise-intro">
                     Geen extra governance om de governance. Wel heldere
@@ -1443,24 +1050,17 @@
 
 
         <!-- WERKWIJZE -->
-
         <section class="section">
 
-            <span class="background-word" aria-hidden="true">
-                Resultaat
-            </span>
+            <span class="background-word" aria-hidden="true">Resultaat</span>
 
             <div class="container approach content-layer">
 
                 <div>
 
-                    <div class="section-label">
-                        Werkwijze
-                    </div>
+                    <div class="section-label">Werkwijze</div>
 
-                    <h2>
-                        Eenvoud waar het kan. Scherpte waar het moet.
-                    </h2>
+                    <h2>Eenvoud waar het kan. Scherpte waar het moet.</h2>
 
                     <p class="body-copy">
                         FROST brengt inhoud, mensen en uitvoering bij elkaar.
@@ -1473,9 +1073,6 @@
                 <div class="approach-steps">
 
                     <article class="approach-step">
-
-                        <span>01</span>
-
                         <div>
                             <h3>Focus</h3>
                             <p>
@@ -1483,13 +1080,9 @@
                                 er werkelijk toe doen.
                             </p>
                         </div>
-
                     </article>
 
                     <article class="approach-step">
-
-                        <span>02</span>
-
                         <div>
                             <h3>Eigenaarschap</h3>
                             <p>
@@ -1497,13 +1090,9 @@
                                 nodig is om verantwoordelijkheid te nemen.
                             </p>
                         </div>
-
                     </article>
 
                     <article class="approach-step">
-
-                        <span>03</span>
-
                         <div>
                             <h3>Structuur</h3>
                             <p>
@@ -1511,13 +1100,9 @@
                                 zonder onnodige bureaucratie.
                             </p>
                         </div>
-
                     </article>
 
                     <article class="approach-step">
-
-                        <span>04</span>
-
                         <div>
                             <h3>Vertrouwen</h3>
                             <p>
@@ -1525,7 +1110,6 @@
                                 samenwerking en duurzame toepassing.
                             </p>
                         </div>
-
                     </article>
 
                 </div>
@@ -1539,30 +1123,21 @@
 
 
         <!-- OVER JORAM -->
-
         <section class="section about-section" id="over">
 
-            <span class="background-word" aria-hidden="true">
-                Mens
-            </span>
+            <span class="background-word" aria-hidden="true">Mens</span>
 
             <div class="container about-layout content-layer">
 
                 <div class="about-image">
-
-                    Joram.png
-
+                    <img src="Joram.png" alt="Joram Frieser" loading="lazy">
                 </div>
 
                 <div class="about-copy">
 
-                    <div class="section-label">
-                        Over Joram
-                    </div>
+                    <div class="section-label">Over Joram</div>
 
-                    <h2>
-                        Governance werkt pas wanneer mensen ermee kunnen werken.
-                    </h2>
+                    <h2>Governance werkt pas wanneer mensen ermee kunnen werken.</h2>
 
                     <p>
                         Ik help organisaties om meer waarde uit data te halen.
@@ -1591,18 +1166,13 @@
 
 
         <!-- CONTACT -->
-
         <section class="contact-section" id="contact">
 
             <div class="container">
 
-                <div class="section-label">
-                    Contact
-                </div>
+                <div class="section-label">Contact</div>
 
-                <h2>
-                    Wat kunnen we voor elkaar betekenen?
-                </h2>
+                <h2>Wat kunnen we voor elkaar betekenen?</h2>
 
                 <p class="lead">
                     Een vraagstuk rond data governance, datakwaliteit,
@@ -1610,19 +1180,13 @@
                     praktische volgende stap.
                 </p>
 
-                <a
-                    class="contact-email"
-                    href="mailto:joram@frost-mda.nl"
-                >
+                <a class="contact-email" href="mailto:joram@frost-mda.nl">
                     joram@frost-mda.nl
                 </a>
 
                 <div class="contact-links">
 
-                    <a
-                        class="button button-primary"
-                        href="mailto:joram@frost-mda.nl"
-                    >
+                    <a class="button button-primary" href="mailto:joram@frost-mda.nl">
                         Stuur een e-mail
                     </a>
 
@@ -1645,21 +1209,13 @@
 
 
     <!-- FOOTER -->
-
     <footer>
 
         <div class="container footer-inner">
 
             <div>
-
-                <div class="footer-brand">
-                    FROST
-                </div>
-
-                <div class="footer-text">
-                    Mens | Data | AI
-                </div>
-
+                <div class="footer-brand">FROST</div>
+                <div class="footer-text">Mens | Data | AI</div>
             </div>
 
             <div class="footer-text">
@@ -1668,9 +1224,7 @@
 
             <div class="footer-links">
 
-                <a href="mailto:joram@frost-mda.nl">
-                    E-mail
-                </a>
+                <a href="mailto:joram@frost-mda.nl">E-mail</a>
 
                 <a
                     href="https://www.linkedin.com/in/joramfrieser/"
@@ -1687,11 +1241,9 @@
     </footer>
 
 
-    <!-- Alleen voor het automatisch tonen van het huidige jaar -->
-
+    <!-- Toont automatisch het huidige jaar -->
     <script>
-        document.getElementById("current-year").textContent =
-            new Date().getFullYear();
+        document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
 
 </body>
