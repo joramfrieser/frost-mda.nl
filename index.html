@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>FROST | Mens, Data & AI</title>
+<title>FROST | Mens | Data | AI</title>
 
 <style>
 
@@ -15,128 +15,150 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-line-height:1.6;
-color:#1d2939;
+font-family:'Segoe UI',sans-serif;
+line-height:1.7;
+color:#17324d;
 background:#ffffff;
 }
 
 .hero{
-height:100vh;
+height:85vh;
+min-height:650px;
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
 url('mvp.png');
 background-size:cover;
-background-position:center;
+background-position:center 75%;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-color:white;
 padding:40px;
+color:white;
 }
 
 .hero-content{
 max-width:900px;
 }
 
-.hero img{
-width:180px;
+.hero-logo{
+width:120px;
 margin-bottom:30px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:20px;
-letter-spacing:2px;
+font-size:72px;
+letter-spacing:8px;
+margin-bottom:10px;
 }
 
-.hero p{
-font-size:1.4rem;
-max-width:700px;
-margin:auto;
+.hero-tagline{
+font-size:24px;
+margin-bottom:30px;
 }
 
-.section{
+.hero-intro{
+font-size:28px;
+font-weight:300;
+}
+
+.container{
 max-width:1200px;
 margin:auto;
-padding:100px 30px;
+padding:80px 30px;
 }
 
-.section h2{
-font-size:2.4rem;
-margin-bottom:30px;
-color:#0d3b66;
+h2{
+font-size:42px;
+color:#072f57;
+margin-bottom:20px;
 }
 
-.section p{
-font-size:1.1rem;
+.lead{
+font-size:22px;
 max-width:900px;
 }
 
-.grid{
+.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:40px;
-margin-top:50px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
 }
 
 .card{
-background:#f7f9fc;
+background:#f6f8fb;
 padding:30px;
 border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
 }
 
 .card h3{
 margin-bottom:15px;
-color:#0d3b66;
+color:#092f57;
 }
 
-.image-section{
-height:500px;
+.banner{
+height:320px;
+background-image:url('Eilanden.png');
 background-size:cover;
 background-position:center;
 }
 
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+.why{
+text-align:center;
 }
 
-.about img{
-width:100%;
-border-radius:20px;
+.brand-logo{
+width:320px;
+max-width:100%;
+margin-bottom:40px;
 }
 
 .contact{
-background:#0d3b66;
+background:#072f57;
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:90px 30px;
+}
+
+.contact h2{
+color:white;
 }
 
 .contact a{
 color:white;
 text-decoration:none;
-font-size:1.2rem;
+font-size:22px;
 }
 
-footer{
+.footer{
+padding:25px;
 text-align:center;
-padding:40px;
-background:#f5f5f5;
+font-size:14px;
+background:#f3f5f8;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.5rem;
+font-size:46px;
 }
 
-.about{
-grid-template-columns:1fr;
+.hero-intro{
+font-size:22px;
+}
+
+.hero-tagline{
+font-size:20px;
+}
+
+h2{
+font-size:32px;
+}
+
+.lead{
+font-size:18px;
 }
 
 }
@@ -150,162 +172,175 @@ grid-template-columns:1fr;
 
 <div class="hero-content">
 
-Logo.png
+<img srcra minimaal.png
 
 <h1>FROST</h1>
 
-<p>
+<div class="hero-tagline">
 Mens | Data | AI
-<br><br>
-Van governance op papier naar resultaat in de praktijk.
-</p>
+</div>
+
+<div class="hero-intro">
+Trainingen, workshops, kennissessies en interim ondersteuning
+op het gebied van Data Governance, Critical Data Elements,
+Collibra en AI.
+</div>
 
 </div>
 
 </section>
 
-<section class="section">
+<section class="container">
 
-<h2>Over FROST</h2>
+<h2>Van Data naar Resultaat</h2>
 
-<p>
+<p class="lead">
 
-Data governance hoeft niet ingewikkeld te zijn.
+Veel organisaties investeren in data, governance en AI.
 
-Ik help organisaties om eigenaarschap, datakwaliteit en herleidbaarheid daadwerkelijk werkend te krijgen.
-Geen dikke rapporten en eindeloze discussies, maar focus op wat nodig is om betrouwbare stuurinformatie en betere besluitvorming mogelijk te maken.
+De echte uitdaging zit niet in kennis.
+
+De echte uitdaging zit in eigenaarschap, focus,
+toepasbaarheid en resultaat.
+
+FROST helpt organisaties om complexe onderwerpen
+begrijpelijk te maken én daadwerkelijk werkend te krijgen.
 
 </p>
 
 </section>
 
-<div class="image-section" style="background-image:url('Eilanden.png');"></div>
+<div class="banner"></div>
 
-<section class="section">
+<section class="container">
 
-<h2>Waar ik organisaties mee help</h2>
+<h2>Trainingen, Workshops & Kennissessies</h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
 <h3>Data Governance</h3>
-<p>
-Werkende governance, duidelijke rollen en heldere besluitvorming.
-</p>
+Governance operating models, Data Owners, Data Stewards,
+besluitvorming en werkende governance zonder bureaucratie.
 </div>
 
 <div class="card">
-<h3>Datakwaliteit</h3>
-<p>
-Van incidenten oplossen naar structurele verbetering.
-</p>
-</div>
-
-<div class="card">
-<h3>BCBS239 & Traceability</h3>
-<p>
-Inzichtelijk maken waar data vandaan komt en hoe rapportages tot stand komen.
-</p>
+<h3>Critical Data Elements</h3>
+Van duizenden data-elementen naar een beheersbare set
+kritieke data-elementen met focus op risico,
+rapportages en impact.
 </div>
 
 <div class="card">
 <h3>Collibra</h3>
-<p>
-Eigenaarschap, definities en lineage praktisch toepasbaar maken.
-</p>
+Business Glossary, Data Lineage,
+metadata management, eigenaarschap,
+adoptie en waardecreatie.
 </div>
 
 <div class="card">
-<h3>Leiderschap</h3>
-<p>
-Teams van plannen naar uitvoering brengen.
-</p>
+<h3>Datakwaliteit</h3>
+Van incidentmanagement naar structurele verbetering
+en betrouwbare data.
 </div>
 
 <div class="card">
-<h3>AI</h3>
-<p>
-AI toepassen waar het helpt, zonder de menselijke maat te verliezen.
-</p>
+<h3>Data Ownership</h3>
+Praktische workshops voor Data Owners,
+Data Stewards en managementteams.
+</div>
+
+<div class="card">
+<h3>AI in de Praktijk</h3>
+Verantwoord en pragmatisch gebruik van AI
+voor organisaties en professionals.
 </div>
 
 </div>
 
 </section>
 
-<section class="section">
+<section class="container why">
 
-<div class="about">
+Logo.png
 
-<div>
+<h2>Waarom FROST?</h2>
 
-<h2>Over Joram Frieser</h2>
+<p class="lead">
 
-<p>
+Data staat nooit op zichzelf.
 
-Pragmatische data leider met ervaring binnen BNG Bank, Rabobank, UWV en de Volksbank. Focus op data governance, datakwaliteit, metadata, stakeholdermanagement en organisatieverandering. Gespecialiseerd in het terugbrengen van complexe vraagstukken naar praktische oplossingen die daadwerkelijk gebruikt worden. 【1-50f4c3】
+Processen, systemen, rapportages,
+eigenaarschap, governance en technologie
+zijn met elkaar verbonden.
+
+FROST helpt organisaties deze verbindingen zichtbaar
+te maken en terug te brengen tot iets dat werkt.
+
+Geen governance om de governance.
+
+Geen tooling om de tooling.
+
+Wel resultaat.
 
 </p>
 
-<br>
+</section>
 
-<p>
+<section class="container">
 
-Focus op Resultaat, Ownership, Structuur & Toepasbaarheid.
+<h2>Over Joram</h2>
+
+<p class="lead">
+
+Joram Frieser helpt organisaties met Data Governance,
+Critical Data Elements, Datakwaliteit, Collibra,
+Metadata Management en AI-adoptie.
+
+Met ervaring binnen financiële instellingen en de publieke sector
+combineert hij inhoudelijke expertise met een pragmatische aanpak.
+
+Complexiteit terugbrengen tot iets wat werkt.
+Dat is waar FROST voor staat.
 
 </p>
-
-</div>
-
-<div>
-
-Lean.png
-
-</div>
-
-</div>
 
 </section>
 
 <section class="contact">
 
-<h2>Contact</h2>
-
-<br>
+<h2>Boek een sessie</h2>
 
 <p>
 
-Joram Frieser
+✔ Trainingen<br>
+✔ Workshops<br>
+✔ Kennissessies<br>
+✔ Inspiratiesessies<br>
+✔ Interim ondersteuning
 
 </p>
 
-<br>
-
-<p>
+<br><br>
 
 <a href="mailto:joram@frost-mda.nl">
 joram@frost-mda.nl
 </a>
 
-</p>
-
-<br>
-
-<p>
+<br><br>
 
 <a href="https://www.linkedin.com/in/joramfrieser/" target="_blank">
 LinkedIn Profiel
 </a>
 
-</p>
-
 </section>
 
-<footer>
+<div class="footer">
 
-© 2026 FROST | Mens, Data & AI
+© 2026 FROST | Mens | Data | AI
 
-</footer>
+</div>
 
 </body>
 </html>
+``
