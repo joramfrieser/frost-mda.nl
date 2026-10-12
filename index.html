@@ -18,15 +18,15 @@ body{
 font-family:'Segoe UI',sans-serif;
 line-height:1.7;
 color:#17324d;
-background:#ffffff;
+background:#fff;
 }
 
 .hero{
-height:85vh;
-min-height:650px;
+height:90vh;
+min-height:700px;
 background:
 linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-url('lean.png');
+url('mvp.png');
 background-size:cover;
 background-position:center 75%;
 display:flex;
@@ -38,81 +38,91 @@ color:white;
 }
 
 .hero-content{
-max-width:900px;
+max-width:1000px;
 }
 
 .hero-logo{
-width:120px;
-margin-bottom:30px;
+width:130px;
+margin-bottom:35px;
 }
 
 .hero h1{
-font-size:72px;
-letter-spacing:8px;
+font-size:150px;
+font-weight:800;
+letter-spacing:14px;
+line-height:1;
 margin-bottom:10px;
 }
 
 .hero-tagline{
-font-size:24px;
-margin-bottom:30px;
+font-size:40px;
+font-weight:300;
+margin-bottom:35px;
 }
 
 .hero-intro{
-font-size:28px;
-font-weight:300;
+font-size:46px;
+font-weight:600;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.hero-sub{
+font-size:24px;
+max-width:850px;
+margin:auto;
+opacity:.95;
 }
 
 .container{
 max-width:1200px;
 margin:auto;
 padding:80px 30px;
+text-align:center;
 }
 
 h2{
 font-size:42px;
+margin-bottom:25px;
 color:#072f57;
-margin-bottom:20px;
 }
 
 .lead{
-font-size:22px;
 max-width:900px;
+margin:auto;
+font-size:22px;
+}
+
+.banner{
+height:300px;
+background-image:url('Eilanden.png');
+background-size:cover;
+background-position:center;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:25px;
-margin-top:40px;
+margin-top:50px;
 }
 
 .card{
 background:#f6f8fb;
 padding:30px;
 border-radius:18px;
-box-shadow:0 5px 15px rgba(0,0,0,.05);
+box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
 .card h3{
-margin-bottom:15px;
-color:#092f57;
-}
-
-.banner{
-height:320px;
-background-image:url('Eilanden.png');
-background-size:cover;
-background-position:center;
-}
-
-.why{
-text-align:center;
+margin-bottom:12px;
+color:#072f57;
 }
 
 .brand-logo{
-width:320px;
+width:340px;
 max-width:100%;
-margin-bottom:40px;
+margin-bottom:35px;
 }
 
 .contact{
@@ -126,31 +136,41 @@ padding:90px 30px;
 color:white;
 }
 
+.contact p{
+max-width:800px;
+margin:auto;
+font-size:22px;
+}
+
 .contact a{
 color:white;
+font-size:26px;
 text-decoration:none;
-font-size:22px;
 }
 
 .footer{
 padding:25px;
 text-align:center;
-font-size:14px;
-background:#f3f5f8;
+background:#f2f5f8;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:46px;
-}
-
-.hero-intro{
-font-size:22px;
+font-size:72px;
+letter-spacing:6px;
 }
 
 .hero-tagline{
-font-size:20px;
+font-size:24px;
+}
+
+.hero-intro{
+font-size:30px;
+}
+
+.hero-sub{
+font-size:18px;
 }
 
 h2{
@@ -172,18 +192,18 @@ font-size:18px;
 
 <div class="hero-content">
 
-<img srcra minimaal.png
-
-<h1>FROST</h1>
-
-<div class="hero-tagline">
+<img src="Logo ultra minimaal.png" alt="FROST class="hero-tagline">
 Mens | Data | AI
 </div>
 
 <div class="hero-intro">
-Trainingen, workshops, kennissessies en interim ondersteuning
-op het gebied van Data Governance, Critical Data Elements,
-Collibra en AI.
+Meer waarde halen uit data.<br>
+Zonder onnodige complexiteit.
+</div>
+
+<div class="hero-sub">
+Grip op eigenaarschap, datakwaliteit,
+kritieke data-elementen en AI.
 </div>
 
 </div>
@@ -192,19 +212,19 @@ Collibra en AI.
 
 <section class="container">
 
-<h2>Van Data naar Resultaat</h2>
+<h2>Waarom FROST?</h2>
 
 <p class="lead">
 
 Veel organisaties investeren in data, governance en AI.
 
-De echte uitdaging zit niet in kennis.
+De uitdaging zit meestal niet in kennis of technologie.
 
-De echte uitdaging zit in eigenaarschap, focus,
-toepasbaarheid en resultaat.
+De uitdaging zit in eigenaarschap, focus, besluitvorming
+en het daadwerkelijk toepassen van wat bedacht is.
 
-FROST helpt organisaties om complexe onderwerpen
-begrijpelijk te maken én daadwerkelijk werkend te krijgen.
+FROST helpt organisaties complexe vraagstukken terug te brengen
+tot praktische oplossingen die werken.
 
 </p>
 
@@ -214,74 +234,53 @@ begrijpelijk te maken én daadwerkelijk werkend te krijgen.
 
 <section class="container">
 
-<h2>Trainingen, Workshops & Kennissessies</h2>
+<h2>Waar ik organisaties mee help</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>Data Governance</h3>
-Governance operating models, Data Owners, Data Stewards,
-besluitvorming en werkende governance zonder bureaucratie.
+Werkende governance, duidelijke verantwoordelijkheden en besluitvorming zonder bureaucratie.
 </div>
 
 <div class="card">
-<h3>Critical Data Elements</h3>
-Van duizenden data-elementen naar een beheersbare set
-kritieke data-elementen met focus op risico,
-rapportages en impact.
-</div>
-
-<div class="card">
-<h3>Collibra</h3>
-Business Glossary, Data Lineage,
-metadata management, eigenaarschap,
-adoptie en waardecreatie.
+<h3>Kritieke Data Elementen</h3>
+Focus op de data die écht impact heeft op risico's, processen en besluitvorming.
 </div>
 
 <div class="card">
 <h3>Datakwaliteit</h3>
-Van incidentmanagement naar structurele verbetering
-en betrouwbare data.
+Van incidenten oplossen naar structurele kwaliteitsverbetering.
 </div>
 
 <div class="card">
-<h3>Data Ownership</h3>
-Praktische workshops voor Data Owners,
-Data Stewards en managementteams.
+<h3>AI</h3>
+Mensgerichte toepassing van AI die waarde toevoegt aan de organisatie.
 </div>
 
 <div class="card">
-<h3>AI in de Praktijk</h3>
-Verantwoord en pragmatisch gebruik van AI
-voor organisaties en professionals.
+<h3>Workshops & Kennissessies</h3>
+Praktische sessies die teams helpen om kennis om te zetten in actie.
+</div>
+
+<div class="card">
+<h3>Trainingen</h3>
+Interactieve trainingen voor management, Data Owners, Stewards en professionals.
 </div>
 
 </div>
 
 </section>
 
-<section class="container why">
+<section class="container">
 
-Logo.png
-
-<h2>Waarom FROST?</h2>
+<img src="Logo.png" alt="h2>
 
 <p class="lead">
 
-Data staat nooit op zichzelf.
-
-Processen, systemen, rapportages,
-eigenaarschap, governance en technologie
-zijn met elkaar verbonden.
-
-FROST helpt organisaties deze verbindingen zichtbaar
-te maken en terug te brengen tot iets dat werkt.
-
-Geen governance om de governance.
-
-Geen tooling om de tooling.
-
-Wel resultaat.
+Data Governance · Kritieke Data Elementen · Datakwaliteit ·
+Data Ownership · Metadata Management · Collibra · BCBS239 ·
+AI Governance · AI in de Praktijk
 
 </p>
 
@@ -293,15 +292,12 @@ Wel resultaat.
 
 <p class="lead">
 
-Joram Frieser helpt organisaties met Data Governance,
-Critical Data Elements, Datakwaliteit, Collibra,
-Metadata Management en AI-adoptie.
-
-Met ervaring binnen financiële instellingen en de publieke sector
+Joram Frieser helpt organisaties om meer waarde uit data te halen.
+Met ruime ervaring binnen de financiële sector en de publieke sector
 combineert hij inhoudelijke expertise met een pragmatische aanpak.
 
-Complexiteit terugbrengen tot iets wat werkt.
-Dat is waar FROST voor staat.
+Zijn kracht ligt in het terugbrengen van complexe vraagstukken
+naar oplossingen die daadwerkelijk gebruikt worden.
 
 </p>
 
@@ -309,15 +305,15 @@ Dat is waar FROST voor staat.
 
 <section class="contact">
 
-<h2>Boek een sessie</h2>
+<h2>Wat kunnen we voor elkaar betekenen?</h2>
 
 <p>
 
-✔ Trainingen<br>
-✔ Workshops<br>
-✔ Kennissessies<br>
-✔ Inspiratiesessies<br>
-✔ Interim ondersteuning
+Of het nu gaat om Data Governance,
+kritieke data-elementen, datakwaliteit,
+AI, trainingen, workshops of kennisdeling:
+
+ik ga graag met je in gesprek.
 
 </p>
 
@@ -343,4 +339,3 @@ LinkedIn Profiel
 
 </body>
 </html>
-``
